@@ -29,6 +29,18 @@ de cette page.
 3. Installe, ouvre l'app.
 4. Colle le lien de ta playlist YouTube publique. 🎧
 
+## 🔄 Installer via Obtainium (mises à jour auto)
+
+[Obtainium](https://obtainium.imranr.dev/) installe l'app directement depuis
+les Releases GitHub et la **met à jour automatiquement** :
+
+1. Installe **Obtainium** depuis [obtainium.imranr.dev](https://obtainium.imranr.dev/).
+2. Ouvre Obtainium → **+** (Ajouter une app).
+3. Source : **GitHub Releases**.
+4. Lien : `https://github.com/stevegoste/musicme`.
+5. Filtre APK : `app-release\.apk`.
+6. Touche **Ajouter** → l'app s'installe et se met à jour toute seule. 🔄
+
 ## 🚧 Statut
 
 En développement actif.
