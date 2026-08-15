@@ -38,3 +38,13 @@ En développement actif. Dépôt privé pour l'instant.
 ---
 
 *Pour les développeurs : voir [`DEVELOPING.md`](DEVELOPING.md).*
+
+## ☕ Soutenir le projet
+
+MusicME est **gratuit et sans pub**. Si l'app te sert au quotidien, un petit
+don est toujours le bienvenu pour couvrir les frais (serveur, café ☕) :
+
+- **[Ko-fi](https://ko-fi.com/ton-pseudo)** — don ponctuel ou récurrent
+- **[PayPal](https://www.paypal.me/ton-pseudo)** — un coup de pouce rapide
+
+Merci pour ton soutien ! 🙏
