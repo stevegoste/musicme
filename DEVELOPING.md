@@ -66,6 +66,77 @@ NB : `react-native-track-player` nécessite un correctif Kotlin appliqué via
 - `app.json` : configuration Expo, schéma, icône et mode audio de fond.
 - `package.json` : scripts Expo et vérification TypeScript.
 
+## Stabilisation des flux via un serveur (Piped / Invidious)
+
+### Pourquoi un serveur ?
+
+Aujourd'hui chaque téléphone résout ses propres flux directement contre
+Innertube (`youtubei/v1/player`) depuis **son IP**. Limites :
+
+- YouTube peut **limiter / bloquer** les IP qui font beaucoup de requêtes
+  `player` ;
+- quand YouTube change ses signatures (**PoToken**), la résolution casse et il
+  faut **mettre à jour l'app** pour tous les utilisateurs ;
+- on ne peut pas obtenir l'**audio seul** (itag 140) : on lit du 360p (itag 18,
+  ~4 Mo/min).
+
+Un serveur central règle ces trois points : il résout depuis une **IP stable**,
+absorbe les changements de signature (on met à jour le serveur, pas les
+téléphones) et peut servir **l'audio pur** (~1 Mo/min).
+
+### Solution recommandée : instance Piped auto-hébergée
+
+[Piped](https://github.com/TeamPiped/Piped) est un frontend open-source qui
+parle à YouTube côté serveur et expose une API JSON propre + un proxy de
+streaming. Sur un petit VPS (2-5 €/mois), en Docker :
+
+```bash
+docker run -d --name piped -p 8080:8080 \
+  -v piped:/app/data 1337kavin/piped:latest
+```
+
+L'app appelle alors :
+
+```
+GET https://<instance>/api/streams/{videoId}
+```
+
+Réponse utile :
+
+- `audioStreams[]` : flux audio seuls (prendre le meilleur, itag 140 / 128
+  kbps) → **lecture audio pur** ;
+- `hls` : manifest pour les **radios live** ;
+- `livestream` : vrai si le direct ;
+- `url` des streams = URLs proxyées par l'instance (consomme la bande passante
+  du serveur).
+
+### Alternative : instance Invidious
+
+- `GET /api/v1/videos/{id}` → champ `formatStreams` (itag 140) ;
+- `GET /api/v1/latest_version?id={id}&itag=140` → redirection directe vers
+  l'audio.
+
+### Chaîne de repli à implémenter dans l'app
+
+1. Instance personnelle (si configurée dans l'app) ;
+2. Instances publiques Piped (liste dynamique) ;
+3. Repli direct Innertube (comportement actuel).
+
+### Impact code (quand on s'y met)
+
+- `src/audio/streamResolver.ts` : `resolveAudioStream` essaie d'abord
+  l'instance Piped configurée (`/streams/{id}` → itag 140), puis retombe sur
+  Innertube ; `resolveLiveStreamUrl` utilise le champ `hls`.
+- Ajouter un réglage « Instance Piped (URL) » dans l'app.
+- Côté serveur : configurer le proxy + reverse proxy (Caddy/Nginx) pour
+  `https://<instance>/`.
+
+### Coût et modèle
+
+- VPS ~3-5 €/mois + bande passante (le proxy consomme de la data serveur).
+- C'est la base d'un éventuel **petit abonnement « serveur » (1-2 €/mois)** :
+  l'utilisateur paie pour la stabilité et l'audio pur, pas pour la musique.
+
 ## Zone grise ToS
 
 L'app interroge l'API interne de YouTube (Innertube) sans compte. Usage privé
