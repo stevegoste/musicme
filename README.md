@@ -44,6 +44,9 @@ En développement actif. Dépôt privé pour l'instant.
 MusicME est **gratuit et sans pub**. Si l'app te sert au quotidien, un petit
 don est toujours le bienvenu pour couvrir les frais (serveur, café ☕) :
 
+[![Sponsor sur GitHub](https://img.shields.io/badge/Sponsor%20MusicME-EA4AAA?style=for-the-badge&logo=githubsponsors)](https://github.com/sponsors/stevegoste)
+
+- **GitHub Sponsors** — [github.com/sponsors/stevegoste](https://github.com/sponsors/stevegoste)
 - **[Ko-fi](https://ko-fi.com/ton-pseudo)** — don ponctuel ou récurrent
 - **[PayPal](https://www.paypal.me/ton-pseudo)** — un coup de pouce rapide
 
