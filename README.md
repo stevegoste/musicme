@@ -21,19 +21,17 @@ sans compte Google, sans clé API.
 
 ## 📥 Installer l'app
 
-L'app est **en développement** — aucune version publiée pour l'instant.
-Dès la première release, l'APK sera disponible dans l'onglet **Releases** de
-cette page.
+L'APK est disponible dans la **[section Releases](https://github.com/stevegoste/musicme/releases)**
+de cette page.
 
-Une fois le fichier `.apk` téléchargé sur ton téléphone Android :
-
-1. Ouvre le fichier et accepte « Installer depuis une source inconnue ».
-2. Installe, ouvre l'app.
-3. Colle le lien de ta playlist YouTube publique. 🎧
+1. Télécharge `app-release.apk` depuis la dernière release.
+2. Ouvre le fichier et accepte « Installer depuis une source inconnue ».
+3. Installe, ouvre l'app.
+4. Colle le lien de ta playlist YouTube publique. 🎧
 
 ## 🚧 Statut
 
-En développement actif. Dépôt privé pour l'instant.
+En développement actif.
 
 ---
 
