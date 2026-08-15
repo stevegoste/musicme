@@ -11,6 +11,14 @@ sans compte Google, sans clé API.
 - ❤️ Favoris et recherche
 - 🌐 FR / EN
 
+## 📸 Captures d'écran
+
+| | |
+|---|---|
+| ![Accueil](screenshots/accueil.jpg) | ![Recherche de playlists](screenshots/recherche-playlists.jpg) |
+| ![Création de mix](screenshots/creation-mix.jpg) | ![Playlist & mix](screenshots/playlist-mix.jpg) |
+| ![Écran de bienvenue](screenshots/bienvenue.jpg) | |
+
 ## 📥 Installer l'app
 
 L'app est **en développement** — aucune version publiée pour l'instant.
