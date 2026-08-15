@@ -15,9 +15,9 @@ sans compte Google, sans clé API.
 
 | | |
 |---|---|
-| ![Accueil](screenshots/accueil.jpg) | ![Recherche de playlists](screenshots/recherche-playlists.jpg) |
-| ![Création de mix](screenshots/creation-mix.jpg) | ![Playlist & mix](screenshots/playlist-mix.jpg) |
-| ![Écran de bienvenue](screenshots/bienvenue.jpg) | |
+| ![Écran de bienvenue](screenshots/bienvenue.jpg) | ![Accueil](screenshots/accueil.jpg) |
+| ![Mix & Radio live](screenshots/playlist-mix.jpg) | ![Recherche de playlists](screenshots/recherche-playlists.jpg) |
+| ![Création de mix](screenshots/creation-mix.jpg) | |
 
 ## 📥 Installer l'app
 
