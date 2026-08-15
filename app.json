@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "MusicME",
+    "slug": "musicme",
+    "icon": "./assets/icon.png",
+    "version": "1.0.0",
+    "newArchEnabled": false,
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "musicme",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#F7F8FC"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.musicme.app",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.musicme.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#6D28D9"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-font"
+    ]
+  }
+}

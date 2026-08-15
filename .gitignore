@@ -1,0 +1,30 @@
+# Dépendances et builds
+node_modules/
+.expo/
+dist/
+web-build/
+android/build/
+android/app/build/
+android/.gradle/
+*.log
+.DS_Store
+
+# Secrets et signatures
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+android/keystore.properties
+.env
+.env.local
+.yt-cookies.txt
+.yt-cookies*
+
+# Outils / IDE
+/.idea
+/.vscode
+.freebuff/
+
+# Divers
+*.orig.*
