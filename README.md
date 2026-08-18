@@ -1,63 +1,67 @@
 # MusicME 🎧
 
-Colle une playlist YouTube **publique** et écoute-la en continu, **écran éteint**,
-sans compte Google, sans clé API.
+Paste a **public** YouTube playlist and listen to it in the background, **with the
+screen off**, no Google account, no API key.
 
-## Fonctionnalités
+## Features
 
-- 🎧 Écoute en continu, écran éteint
-- 🔀 Mix par genre (jusqu'à 3 playlists fusionnées)
-- 📻 Radio live (Lofi, Metal, Jazz, Rock…)
-- ❤️ Favoris et recherche
+- 🎧 Continuous playback, screen off
+- 🔀 Genre mixes (up to 3 merged playlists)
+- 📻 Live radio (Lofi, Metal, Jazz, Rock…)
+- ❤️ Favorites and search
 - 🌐 FR / EN
 
-## 📸 Captures d'écran
+## 📸 Screenshots
 
 | | |
 |---|---|
-| ![Écran de bienvenue](screenshots/bienvenue.jpg) | ![Accueil](screenshots/accueil.jpg) |
-| ![Mix & Radio live](screenshots/playlist-mix.jpg) | ![Recherche de playlists](screenshots/recherche-playlists.jpg) |
-| ![Création de mix](screenshots/creation-mix.jpg) | |
+| ![Welcome screen](screenshots/bienvenue.jpg) | ![Home](screenshots/accueil.jpg) |
+| ![Mix & Live radio](screenshots/playlist-mix.jpg) | ![Playlist search](screenshots/recherche-playlists.jpg) |
+| ![Mix creation](screenshots/creation-mix.jpg) | |
 
-## 📥 Installer l'app
+## 📥 Install the app
 
-L'APK est disponible dans la **[section Releases](https://github.com/stevegoste/musicme/releases)**
-de cette page.
+The APK is available in the **[Releases section](https://github.com/stevegoste/musicme/releases)**
+of this page.
 
-1. Télécharge `app-release.apk` depuis la dernière release.
-2. Ouvre le fichier et accepte « Installer depuis une source inconnue ».
-3. Installe, ouvre l'app.
-4. Colle le lien de ta playlist YouTube publique. 🎧
+1. Download `app-release.apk` from the latest release.
+2. **Enable unknown sources**: open your phone **Settings → Apps → Special app access → Install unknown apps** (or *Settings → Security* on some devices) and allow your browser/file manager to install apps.
+3. Open the downloaded APK file and tap **Install**.
+4. Open the app and paste the link to your public YouTube playlist. 🎧
 
-## 🔄 Installer via Obtainium (mises à jour auto)
+> ⚠️ **First install**: Android blocks apps that don't come from the Play Store.
+> You must **allow "Install unknown apps"** for your browser or file manager in
+> the device settings, otherwise the installation will be rejected.
 
-[Obtainium](https://obtainium.imranr.dev/) installe l'app directement depuis
-les Releases GitHub et la **met à jour automatiquement** :
+## 🔄 Install via Obtainium (auto-updates)
 
-1. Installe **Obtainium** depuis [obtainium.imranr.dev](https://obtainium.imranr.dev/).
-2. Ouvre Obtainium → **+** (Ajouter une app).
-3. Source : **GitHub Releases**.
-4. Lien : `https://github.com/stevegoste/musicme`.
-5. Filtre APK : `app-release\.apk`.
-6. Touche **Ajouter** → l'app s'installe et se met à jour toute seule. 🔄
+[Obtainium](https://obtainium.imranr.dev/) installs the app directly from the
+GitHub Releases and **updates it automatically**:
 
-## 🚧 Statut
+1. Install **Obtainium** from [obtainium.imranr.dev](https://obtainium.imranr.dev/).
+2. Open Obtainium → **+** (Add app).
+3. Source: **GitHub Releases**.
+4. Link: `https://github.com/stevegoste/musicme`.
+5. APK filter: `app-release\.apk`.
+6. Tap **Add** → the app installs and updates itself. 🔄
 
-En développement actif.
+## 🚧 Status
+
+Active development.
 
 ---
 
-*Pour les développeurs : voir [`DEVELOPING.md`](DEVELOPING.md).*
+*For developers: see [`DEVELOPING.md`](DEVELOPING.md).*
 
-## ☕ Soutenir le projet
+## ☕ Support the project
 
-MusicME est **gratuit et sans pub**. Si l'app te sert au quotidien, un petit
-don est toujours le bienvenu pour couvrir les frais (serveur, café ☕) :
+MusicME is **free and ad-free**. If the app helps you every day, a small
+donation is always welcome to cover the costs (server, coffee ☕):
 
-[![Sponsor sur GitHub](https://img.shields.io/badge/Sponsor%20MusicME-EA4AAA?style=for-the-badge&logo=githubsponsors)](https://github.com/sponsors/stevegoste)
+[![Sponsor on GitHub](https://img.shields.io/badge/Sponsor%20MusicME-EA4AAA?style=for-the-badge&logo=githubsponsors)](https://github.com/sponsors/stevegoste)
 
 - **GitHub Sponsors** — [github.com/sponsors/stevegoste](https://github.com/sponsors/stevegoste)
-- **[Ko-fi](https://ko-fi.com/ton-pseudo)** — don ponctuel ou récurrent
-- **[PayPal](https://www.paypal.me/ton-pseudo)** — un coup de pouce rapide
+- **[Ko-fi](https://ko-fi.com/ton-pseudo)** — one-time or recurring donation
+- **[PayPal](https://www.paypal.me/ton-pseudo)** — a quick tip
 
-Merci pour ton soutien ! 🙏
+Thanks for your support! 🙏
